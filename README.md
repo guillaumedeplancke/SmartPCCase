@@ -46,5 +46,5 @@ An Arduino Nano is used in the project to read the analog values from the voltag
 
 I made an instructable with all the instructions to recreate this project. 
 
-Check it out here: link here...
+Check it out here: https://www.instructables.com/Smart-PC-Case/
 
