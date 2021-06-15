@@ -1,0 +1,311 @@
+{
+	"info": {
+		"_postman_id": "59e1b77a-d765-40f3-a62e-3d19000ca2ff",
+		"name": "SmartPCCase",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET all outputs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/outputs",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"outputs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET config values",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/outputs",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"outputs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all sensors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/sensors",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"sensors"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all categories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/categories",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET category by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/category/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"category",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all devices for category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/category/2/devices",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"category",
+						"2",
+						"devices"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET output by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/output/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"output",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET sensor by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/sensor/1",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"sensor",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET all categories seeded with it devices",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/categories/seeded",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"seeded"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET output history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/output/1/history/today",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"output",
+						"1",
+						"history",
+						"today"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET output history (latest 10)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.1.30:5000/api/v1/output/2/history/latest",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"1",
+						"30"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"output",
+						"2",
+						"history",
+						"latest"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET sensor history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.168.168:5000/api/v1/sensor/3/history",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"168",
+						"168"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"sensor",
+						"3",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

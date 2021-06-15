@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Smart PC Case Controller - Guillaume Deplancke</title>
+    <meta name="description" content="This is my first project in MCT at Howest Kortrijk.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="msapplication-TileColor" content="#e85e00">
+    <meta name="theme-color" content="#4D2FF9">
+
+    <link rel="icon" href="favicon.svg">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <link rel="manifest" href="manifest.json">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined">
+    <link rel="stylesheet" href="https://use.typekit.net/yzq8uou.css">
+
+    <link rel="stylesheet" href="css/toastr.min.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/screen.css">
+
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/toastr.min.js"></script>
+    <script src="js/vendor/socket.io.min.js"></script>
+    <script src="js/dataHandler.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/pages/index.js"></script>
+</head>
+
+<body class="js-page-index">
+    <header class="o-row u-bg-waves">
+        <div class="c-header">
+            <div class="c-header__hamburger">
+                <button class="c-nav-trigger js-toggle-nav o-button-reset u-mb-clear">
+                    <span class="c-nav-trigger__svg  material-icons-outlined">menu</span>
+                </button>
+            </div>
+            <div class="c-header__logo">
+                <a href="index.html">
+                    <img class="c-logo" src="./img/logo.svg">
+                </a>
+            </div>
+            <div class="c-header__nav">
+                <nav class="c-nav">
+                    <ul class="o-list c-nav__list">
+                        <li class="c-nav__item is-active">
+                            <a class="c-nav__link" href="index.html">
+                                <span class="c-nav__icon material-icons-outlined">space_dashboard</span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="control.html">
+                                <span class="c-nav__icon material-icons-outlined">construction</span>
+                                Control
+                            </a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="statistics.html">
+                                <span class="c-nav__icon material-icons-outlined">trending_up</span>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="settings.html">
+                                <span class="c-nav__icon material-icons-outlined">settings</span>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="c-header__profile">
+                <img class="c-nav-profile__img" src="img/headshot.jpg">
+            </div>
+        </div>
+    </header>
+    <section class="o-row ">
+        <div class="o-container">
+            <div class="o-section">
+                <div class="o-layout">
+                    <div class="o-layout__item u-1-of-2">
+                        <h1>Welcome back,<br> Guillaume</h1>
+                    </div>
+                    <div class="o-layout__item u-1-of-2">
+                        <img src="./img/man_standing_illustration.svg">
+                    </div>
+                </div>
+            </div>
+            <div class="o-section u-mb-xl">
+                <h2 class="u-mb-clear">Your computer</h2>
+                <div class="o-layout o-layout--gutter js-components">
+                    <div class="o-layout__item u-mt-lg">
+                        <div class="c-card u-text-center u-bg-theme-gradient">
+                            <h3 class="c-card__title u-mb-sm">Ventilatoren</h3>
+                            <div class="o-layout u-mb-sm">
+                                <div class="o-layout__item u-1-of-3">
+                                    <span class="c-card__icon material-icons">air</span>
+                                    <p class="u-mb-clear">- %</p>
+                                </div>
+                                <div class="o-layout__item u-1-of-3">
+                                    <span class="c-card__icon material-icons">air</span>
+                                    <p class="u-mb-clear">- %</p>
+                                </div>
+                                <div class="o-layout__item u-1-of-3">
+                                    <span class="c-card__icon material-icons">air</span>
+                                    <p class="u-mb-clear">- %</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <aside class="c-mobile-nav">
+        <div class="c-mobile-nav__bg"></div>
+        <div class="c-mobile-nav__body u-bg-theme-gradient">
+            <div class="c-mobile-nav__header o-layout--align-center">
+                <a href="index.html">
+                    <img class="c-logo c-logo__white" src="./img/logo.svg">
+                </a>
+                <button class="o-button-reset c-nav-trigger js-toggle-nav u-mb-clear">
+                    <svg class="c-nav-trigger__svg" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <span class="material-icons-outlined c-nav-trigger__svg">close</span>
+                    </svg>
+                </button>
+            </div>
+            <div class="c-mobile-nav__nav c-mobile-nav__nav--main">
+                <nav class="c-nav">
+                    <ul class="o-list c-nav__list u-mt-lg">
+                        <li class="c-nav__item is-active">
+                            <a class="c-nav__link" href="index.html">
+                                <span class="c-nav__icon material-icons-outlined">space_dashboard</span>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="control.html">
+                                <span class="c-nav__icon material-icons-outlined">construction</span>
+                                Control
+                            </a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="statistics.html">
+                                <span class="c-nav__icon material-icons-outlined">trending_up</span>
+                                Statistics
+                            </a>
+                        </li>
+                        <li class="c-nav__item">
+                            <a class="c-nav__link" href="settings.html">
+                                <span class="c-nav__icon material-icons-outlined">settings</span>
+                                Settings
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </aside>
+</body>
+
+</html>

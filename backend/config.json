@@ -1,0 +1,4 @@
+{
+    "spin_fans_on_boot": true,
+    "leds_on_boot": true
+}
