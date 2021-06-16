@@ -30,7 +30,7 @@ The endpoints for the API can be tested with postman. You can find a collection 
 
 All sensors and outputs are stored in a database to make everything modular. I prefer to use MariaDB and had not problems, but MySQL should also work fine.
 
-You can find an .sql script in the database folder which you can then import with for example MySQLWorkbench by setting up a remote connection to Raspberry Pi the project runs on.
+You can find an .sql script in the database folder which you can then import with for example MySQLWorkbench by setting up a remote connection to Raspberry Pi which the project runs on.
 
 
 
